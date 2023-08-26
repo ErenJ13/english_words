@@ -1,7 +1,7 @@
 import './assets/global.scss';
 
 import Task from './domain/model/Task';
-import Button from './presentation/ui-kit/Button';
+import { Button } from './presentation/ui-kit/Button';
 
 const task = new Task(
   'Новая задача',

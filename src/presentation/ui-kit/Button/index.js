@@ -21,4 +21,4 @@ class Button {
   }
 }
 
-export default Button;
+export { Button };
