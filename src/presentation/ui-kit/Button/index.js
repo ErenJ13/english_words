@@ -1,3 +1,5 @@
+import './styles.scss';
+
 class Button {
   constructor(onClick, text) {
     this.onClick = onClick;
@@ -13,6 +15,7 @@ class Button {
 
     button.addEventListener('click', this.onClickHandler);
     button.innerText = this.text;
+    button.className = 'button';
 
     return button;
   }
