@@ -13,4 +13,9 @@ const button = new Button(() => {
   console.log(task.title, task.description, task.createdAt)
 }, 'Нажми меня');
 
+const anotherButton = new Button(() => {
+  console.log('Сообщение')
+}, 'Другая кнопка');
+
 document.body.appendChild(button.render());
+document.body.appendChild(anotherButton.render());
