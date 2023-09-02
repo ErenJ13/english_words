@@ -10,11 +10,11 @@ const task = new Task(
 );
 
 const button = new Button(() => {
-  console.log(task.title, task.description, task.createdAt)
+  console.log(task.title, task.description, task.createdAt);
 }, 'Нажми меня');
 
 const anotherButton = new Button(() => {
-  console.log('Сообщение')
+  console.log('Сообщение');
 }, 'Другая кнопка');
 
 document.body.appendChild(button.render());
