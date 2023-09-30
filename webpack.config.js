@@ -2,9 +2,14 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: './src/index.js',
+  entry: './src/index.jsx',
   module: {
     rules: [
+      {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use: ['babel-loader'],
+      },
       {
         test: /\.s[ac]ss$/i,
         use: [
