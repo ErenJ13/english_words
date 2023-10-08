@@ -10,9 +10,8 @@ export function Button({ onClick, children }) {
   };
 
   return (
-    <button
-      className="button"
-      onClick={onClickHandler}
-    >{children}</button>
+    <button className="button" onClick={onClickHandler}>
+      {children}
+    </button>
   );
 }
