@@ -3,7 +3,15 @@
     "browser": true,
     "es2021": true
   },
-  "extends": "eslint:recommended",
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
   "parserOptions": {
     "ecmaVersion": "latest",
     "sourceType": "module"
@@ -11,6 +19,7 @@
   "rules": {
     "semi": ["error", "always"],
     "indent": ["error", 2, { "SwitchCase": 1 }],
-    "quotes": ["error", "single"]
+    "quotes": ["error", "single"],
+    "react/prop-types": 0
   }
 }
