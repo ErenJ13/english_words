@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles.scss';
+import './styles.scs';
 
 export function Button({ onClick, children }) {
   const onClickHandler = (e) => {
