@@ -8,4 +8,4 @@ function onButtonClick() {
 }
 
 const root = createRoot(document.getElementById('app'));
-root.render(<Button onClick={onButtonClick}>Кнопка React</Button>);
+root.render(<Button onClick={onButtonClick}>Кнопка</Button>);
