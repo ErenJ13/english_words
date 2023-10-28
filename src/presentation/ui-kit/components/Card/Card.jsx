@@ -10,10 +10,17 @@ export default function Card({ item }) {
   return (
     <>
       <div className="cardGame">
-        {isChecked ? item.translate : item.name}
-        <div className="button">
-          <button onClick={handleClick}>Перевод</button>{' '}
-        </div>
+        {isChecked ? (
+          <div>
+            <p>{item.name}</p>
+            <p>{item.translate}</p>
+          </div>
+        ) : (
+          <div className="button">
+            <p>{item.name}</p>
+            <button onClick={handleClick}>Перевод</button>
+          </div>
+        )}
       </div>
     </>
   );
