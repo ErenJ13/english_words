@@ -1,12 +1,14 @@
+$black: #000;
 .head {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #9436ff;
+  background-color: rgba(0, 125, 215, 0);
   position: sticky;
   z-index: 1;
   width: 100%;
   height: 80px;
+  border: 1px solid;
 
   ul {
     display: flex;
@@ -23,6 +25,7 @@
         color: rgb(255, 255, 255);
         text-decoration: none;
         font-size: 40px;
+        text-shadow: 2px 3px 2px rgba($black, 0.18);
       }
       .logo {
         color: aliceblue;
