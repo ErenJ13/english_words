@@ -1,0 +1,63 @@
+.wordHead {
+  background-color: rgb(191, 148, 231);
+  width: 100%;
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding-top: 25px;
+  padding-left: 10%;
+
+  .row {
+    width: 100%;
+    height: 100%;
+    align-self: stretch;
+  }
+}
+
+.wordTable {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  background-color: rgb(255, 255, 255);
+  border: solid 1px rgb(205, 205, 205);
+  width: 100%;
+  padding-left: 10%;
+  font-size: 4vh;
+
+  .delete {
+    background-image: url('https://img.icons8.com/ios-glyphs/30/null/delete-sign.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(255, 255, 255);
+    border: 0px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .pen {
+    background-image: url('https://img.icons8.com/ios-glyphs/30/null/ball-point-pen.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(255, 255, 255);
+    border: 0px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .save {
+    background-image: url('https://img.icons8.com/metro/26/null/checkmark.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgb(255, 255, 255);
+    border: 0px;
+    width: 50px;
+    height: 50px;
+  }
+}
+.tableFlex {
+  margin-top: 0px;
+  width: 100%;
+}

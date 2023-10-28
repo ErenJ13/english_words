@@ -1,14 +1,15 @@
 import React from 'react';
-import { Button } from './ui-kit/Button';
-import './assets/global.scss';
+import Header from './ui-kit/components/Header/Header';
+import CardPage from '../presentation/ui-kit/components/pages/CardPage';
+import TablePage from '../presentation/ui-kit/components/pages/TablePage';
 
-function onButtonClick() {
-  console.log('Нажато');
-}
+import './assets/global.scss';
 
 const App = () => (
   <React.StrictMode>
-    <Button onClick={onButtonClick}>Кнопка</Button>
+    <Header></Header>
+    <CardPage></CardPage>
+    <TablePage></TablePage>
   </React.StrictMode>
 );
 
