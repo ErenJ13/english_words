@@ -1,14 +1,10 @@
 import React from 'react';
-import { Button } from './ui-kit/Button';
+import Header from './ui-kit/components/Header/Header';
 import './assets/global.scss';
-
-function onButtonClick() {
-  console.log('Нажато');
-}
 
 const App = () => (
   <React.StrictMode>
-    <Button onClick={onButtonClick}>Кнопка</Button>
+    <Header></Header>
   </React.StrictMode>
 );
 
