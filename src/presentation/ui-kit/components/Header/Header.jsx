@@ -1,13 +1,18 @@
 import React from 'react';
 import '../Header/header.scss';
+import logo from '../Header/logo.png';
 
 function Header() {
   return (
     <div className="head">
       <ul>
-        <li className="logo"></li>
+        <li>
+          <a href="" className="logo">
+            <img src={logo} alt="" />
+          </a>
+        </li>
         <li className="link">
-          <a className="link" href="">
+          <a href="" className="link">
             Card
           </a>
         </li>
