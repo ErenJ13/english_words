@@ -1,27 +1,25 @@
-import React from 'react';
-import { useState } from 'react';
+import React, { useState } from 'react';
 
-export default function Card({ item }) {
+export default function Card() {
   const [isChecked, setChecked] = useState(false);
   const handleClick = () => {
     setChecked(!isChecked);
   };
-
   return (
-    <>
-      <div className="cardGame">
-        {isChecked ? (
-          <div>
-            <p>{item.name}</p>
-            <p>{item.translate}</p>
-          </div>
-        ) : (
-          <div className="button">
-            <p>{item.name}</p>
+    <div className="cardGame">
+      {isChecked ? (
+        <div>
+          <p>Cat</p>
+          <p>Кот</p>
+        </div>
+      ) : (
+        <div className="button">
+          <p>Cat</p>
+          <p>
             <button onClick={handleClick}>Перевод</button>
-          </div>
-        )}
-      </div>
-    </>
+          </p>
+        </div>
+      )}
+    </div>
   );
 }

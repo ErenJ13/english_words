@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react';
-import { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 export default function TableWord(words, editWords) {
   const { id, theme, eng, rus } = words;
@@ -15,6 +14,7 @@ export default function TableWord(words, editWords) {
     setValueTheme(theme);
     setValueEng(eng);
     setValueRus(rus);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [words]);
 
   function handleTheme(e) {
@@ -28,31 +28,31 @@ export default function TableWord(words, editWords) {
   }
   function saveWords() {
     setIsEditMode(!isEditMode);
-    editWords(id, theme, eng, rus);
+    editWords = { id, theme, eng, rus };
   }
 
   return (
-    <div>
+    <tbody>
       {!isEditMode ? (
-        <div className="wordTable">
-          <p>{valueTheme}</p>
-          <p>{valueEng}</p>
-          <p>{valueRus}</p>
-          <div>
+        <tr className="wordTable">
+          <td>{valueTheme}</td>
+          <td>{valueEng}</td>
+          <td>{valueRus}</td>
+          <td>
             <button className="pen" onClick={handleClick}></button>
-          </div>
-        </div>
+          </td>
+        </tr>
       ) : (
-        <div className="wordTable">
+        <tr className="wordTable">
           <input type="text" value={valueTheme} onChange={handleTheme} />
           <input type="text" value={valueEng} onChange={handleEng} />
           <input type="text" value={valueRus} onChange={handleRus} />
-          <div>
+          <td>
             <button className="save" onClick={saveWords}></button>
             <button className="delete" onClick={handleClick}></button>
-          </div>
-        </div>
+          </td>
+        </tr>
       )}
-    </div>
+    </tbody>
   );
 }
