@@ -2,11 +2,13 @@ import React from 'react';
 
 export default function TableHead() {
   return (
-    <div className="wordHead">
-      <div className="row">Theme</div>
-      <div className="row">English</div>
-      <div className="row">Russian</div>
-      <div className="row"></div>
-    </div>
+    <thead>
+      <tr className="wordHead">
+        <th className="row">Theme</th>
+        <th className="row">English</th>
+        <th className="row">Russian</th>
+        <th className="row">Change</th>
+      </tr>
+    </thead>
   );
 }

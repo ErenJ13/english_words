@@ -1,19 +1,27 @@
+$purple: rgb(45, 0, 77, 0.5);
+$white: rgb(255, 255, 255, 0.1);
+$courier: 'Courier New', Courier, monospace;
+
 .wordHead {
-  background-color: rgb(191, 148, 231);
-  width: 100%;
-  font-family: 'Courier New', Courier, monospace;
-  color: rgb(255, 255, 255);
-  font-size: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  padding-top: 25px;
-  padding-left: 10%;
+  grid-template-rows: 1fr;
+  padding: 20px 0px 20px 0px;
+  background-color: $purple;
+  width: 100%;
+  font-family: $courier;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  text-align: center;
 
   .row {
     width: 100%;
     height: 100%;
     align-self: stretch;
+    font-weight: bold;
+    border: none;
+
+    border-right: 1px solid #ddd;
   }
 }
 
@@ -21,43 +29,53 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  background-color: rgb(255, 255, 255);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: $white;
   border: solid 1px rgb(205, 205, 205);
   width: 100%;
-  padding-left: 10%;
   font-size: 4vh;
-
+  td {
+    border-right: 1px solid #ddd;
+    padding: 10px 15px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    vertical-align: top;
+  }
   .delete {
-    background-image: url('https://img.icons8.com/ios-glyphs/30/null/delete-sign.png');
+    background-image: url('https://img.icons8.com/nolan/64/delete-sign.png');
     background-position: center;
     background-repeat: no-repeat;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255, 0);
     border: 0px;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
   }
 
   .pen {
-    background-image: url('https://img.icons8.com/ios-glyphs/30/null/ball-point-pen.png');
+    background-image: url('https://img.icons8.com/arcade/64/pencil.png');
     background-position: center;
     background-repeat: no-repeat;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255, 0);
     border: 0px;
     width: 50px;
     height: 50px;
   }
 
   .save {
-    background-image: url('https://img.icons8.com/metro/26/null/checkmark.png');
+    background-image: url('https://img.icons8.com/nolan/64/checkmark.png');
     background-repeat: no-repeat;
     background-position: center;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255, 0);
     border: 0px;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
   }
-}
-.tableFlex {
-  margin-top: 0px;
-  width: 100%;
+  input {
+    background-color: rgb(255, 255, 255, 0.7);
+    text-align: center;
+    width: 100%;
+    height: 50%;
+  }
 }

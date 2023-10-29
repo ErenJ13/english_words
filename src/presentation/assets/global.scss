@@ -1,4 +1,4 @@
-$darkslate: #9370db;
+$darkslate: #8600e6;
 $indigo: #4b0082;
 * {
   box-sizing: border-box;
@@ -37,6 +37,7 @@ code {
 .tableFlex {
   margin-top: 0px;
   width: 100%;
+  border-collapse: collapse;
 }
 .cardsFlex {
   display: flex;

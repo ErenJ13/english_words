@@ -11,7 +11,7 @@ export default function TablePage() {
     setWords(words);
   }, []);
   return (
-    <div className="tableFlex">
+    <table className="tableFlex">
       <TableHead></TableHead>
       {wordsTable.map((word) => (
         <TableWord
@@ -21,6 +21,6 @@ export default function TablePage() {
           rus={word.russian}
         ></TableWord>
       ))}
-    </div>
+    </table>
   );
 }
